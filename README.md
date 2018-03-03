@@ -5,11 +5,8 @@ Installation script + notes for clean install of a (probably) Mac machine
 
 * Install 1Password + configure
 * Install Dropbox + configure
-* Run
-   xcode-select --install
-* Run
-   install.sh
-  to install all command-line related stuff
+* Run ```xcode-select --install```
+* Run ```install.sh``` to install all command-line related stuff
 # General apps to install:
 * Airmail
 * Bear
@@ -36,5 +33,5 @@ Installation script + notes for clean install of a (probably) Mac machine
 * Dash
 * Sequel Pro || mycli
 * Docker
-* Github Desktoo
+* Github Desktop
 * VSCode or Sublime Text3 (undecided which)
