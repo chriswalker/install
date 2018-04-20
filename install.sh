@@ -21,7 +21,7 @@ echo "Setting up temporary GOPATH to $GOPATH..."
 echo "Installing Homebrew...."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 echo "Installing brew apps..."
-brew install neovim ack tree ctags fish python python3 tmux tree golang glide dep node
+brew install neovim ack tree ctags fish python python3 tmux tree golang glide dep node jq tig
 
 # Install Python support for Neovim
 echo "Installing Python support for Neovim..."
