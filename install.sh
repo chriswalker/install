@@ -22,27 +22,8 @@ sudo tailscale up
 
 # Shut things down - running Pis headless, and don't care about a bunch
 # of systemd services as a result. Stopping these decreases boot time.
+sudo systemctl stop bluetooth avahi-daemon triggerhappy hciuart
 
+echo "Done!"
 
-#
-# Move into new $HOME
-# 
-echo "Setting up Dev workspace..."
-mkdir -p $HOME/Dev/{data,tmp}
-mkdir -p $HOME/Dev/Projects/Go
-mkdir -p $HOME/Dev/Go/{bin,pkg,src}
-
-# Install dotfiles
-echo "Cloning dotfiles..."
-git clone git@github.com:chriswalker/dotfiles.git
-echo "Creating .config directory..."
-mkdir -p $HOME/.config/
-echo "Running dotfiles install script..."
-$HOME/dotfiles/install.zsh
-# echo "Downloading vim-plug..."
-mkdir -p $HOME/dotfiles/kak/plugins
-git clone git@github.com:robertmeta/plug.kak $HOME/dotfiles/kak/plugins
-# echo "Installing Kakoune plugins..."
-# nvim +PlugInstall +UpdateRemotePlugins +qa!
-# nvim +GoInstallBinaries +qa!
 
